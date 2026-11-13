@@ -196,6 +196,24 @@
             box-shadow: 0 4px 12px rgba(0,0,0,0.04);
         }
 
+        /* Etiqueta de Producto Nuevo */
+        .badge-nuevo {
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            background-color: var(--nyc-brick);
+            color: #ffffff;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 3px 8px;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+            z-index: 2;
+        }
+
         .prod-name {
             font-weight: 700;
             font-size: 1rem;
@@ -449,9 +467,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$10</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Cacahuates-Sal-y-Chile', 12, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Cacahuates-Sal-y-Chile', 10, -1)">-</button>
                             <span class="qty-number" id="qty-Cacahuates-Sal-y-Chile">0</span>
-                            <button class="qty-btn" onclick="updateQty('Cacahuates-Sal-y-Chile', 12, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Cacahuates-Sal-y-Chile', 10, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -468,9 +486,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$10</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Cacahuates-con-Sal', 12, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Cacahuates-con-Sal', 10, -1)">-</button>
                             <span class="qty-number" id="qty-Cacahuates-con-Sal">0</span>
-                            <button class="qty-btn" onclick="updateQty('Cacahuates-con-Sal', 12, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Cacahuates-con-Sal', 10, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -487,9 +505,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$10</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Palomitas-Mantequilla-o-Chile', 14, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Palomitas-Mantequilla-o-Chile', 10, -1)">-</button>
                             <span class="qty-number" id="qty-Palomitas-Mantequilla-o-Chile">0</span>
-                            <button class="qty-btn" onclick="updateQty('Palomitas-Mantequilla-o-Chile', 14, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Palomitas-Mantequilla-o-Chile', 10, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -506,9 +524,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$12</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Botana-Mixta', 15, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Botana-Mixta', 12, -1)">-</button>
                             <span class="qty-number" id="qty-Botana-Mixta">0</span>
-                            <button class="qty-btn" onclick="updateQty('Botana-Mixta', 15, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Botana-Mixta', 12, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -525,9 +543,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$22</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Churros-Rojos', 15, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Churros-Rojos', 22, -1)">-</button>
                             <span class="qty-number" id="qty-Churros-Rojos">0</span>
-                            <button class="qty-btn" onclick="updateQty('Churros-Rojos', 15, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Churros-Rojos', 22, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -544,9 +562,49 @@
                     <div class="prod-footer">
                         <span class="prod-price">$16</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Pepitas-Fritas', 12, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Pepitas-Fritas', 16, -1)">-</button>
                             <span class="qty-number" id="qty-Pepitas-Fritas">0</span>
-                            <button class="qty-btn" onclick="updateQty('Pepitas-Fritas', 12, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Pepitas-Fritas', 16, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA: QUE-CHETOS -->
+                <div class="card-product">
+                    <div style="position: relative; text-align: center; margin-bottom: 12px; background-color: var(--nyc-light); padding: 10px; border-bottom: 1px solid var(--border-color);">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="imagenes/que-chetos.png" alt="Que-Chetos" style="max-width: 100%; height: 140px; object-fit: contain;">
+                    </div>
+                    <div>
+                        <div class="prod-name">Que-Chetos 40 gms</div>
+                        <div class="prod-desc">Frituras crujientes de maíz inflado con intenso sabor a queso cheddar.</div>
+                    </div>
+                    <div class="prod-footer">
+                        <span class="prod-price">$13</span>
+                        <div class="qty-controls">
+                            <button class="qty-btn" onclick="updateQty('Que-Chetos', 13, -1)">-</button>
+                            <span class="qty-number" id="qty-Que-Chetos">0</span>
+                            <button class="qty-btn" onclick="updateQty('Que-Chetos', 13, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA: FRITURAS -->
+                <div class="card-product">
+                    <div style="position: relative; text-align: center; margin-bottom: 12px; background-color: var(--nyc-light); padding: 10px; border-bottom: 1px solid var(--border-color);">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="imagenes/frituras.png" alt="Frituras" style="max-width: 100%; height: 140px; object-fit: contain;">
+                    </div>
+                    <div>
+                        <div class="prod-name">Frituras</div>
+                        <div class="prod-desc">Frituras de harina crujientes y ligeras, ideales para acompañar con salsa casaera y limón.</div>
+                    </div>
+                    <div class="prod-footer">
+                        <span class="prod-price">$10</span>
+                        <div class="qty-controls">
+                            <button class="qty-btn" onclick="updateQty('Frituras', 10, -1)">-</button>
+                            <span class="qty-number" id="qty-Frituras">0</span>
+                            <button class="qty-btn" onclick="updateQty('Frituras', 10, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -571,9 +629,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$12</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Bolitas-Cereza-con-Tamarindo', 10, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Bolitas-Cereza-con-Tamarindo', 12, -1)">-</button>
                             <span class="qty-number" id="qty-Bolitas-Cereza-con-Tamarindo">0</span>
-                            <button class="qty-btn" onclick="updateQty('Bolitas-Cereza-con-Tamarindo', 10, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Bolitas-Cereza-con-Tamarindo', 12, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -590,9 +648,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$11</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Gomitas-de-Sabores', 12, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Gomitas-de-Sabores', 11, -1)">-</button>
                             <span class="qty-number" id="qty-Gomitas-de-Sabores">0</span>
-                            <button class="qty-btn" onclick="updateQty('Gomitas-de-Sabores', 12, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Gomitas-de-Sabores', 11, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -609,9 +667,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$20</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Kranky', 15, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Kranky', 20, -1)">-</button>
                             <span class="qty-number" id="qty-Kranky">0</span>
-                            <button class="qty-btn" onclick="updateQty('Kranky', 15, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Kranky', 20, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -628,9 +686,9 @@
                     <div class="prod-footer">
                         <span class="prod-price">$30</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Pasitas-con-Chocolate', 15, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Pasitas-con-Chocolate', 30, -1)">-</button>
                             <span class="qty-number" id="qty-Pasitas-con-Chocolate">0</span>
-                            <button class="qty-btn" onclick="updateQty('Pasitas-con-Chocolate', 15, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Pasitas-con-Chocolate', 30, 1)">+</button>
                         </div>
                     </div>
                 </div>
@@ -655,9 +713,9 @@
             <div class="prod-footer">
                 <span class="prod-price">$14</span>
                 <div class="qty-controls">
-                    <button class="qty-btn" onclick="updateQty('Barritas-Nutritivas', 12, -1)">-</button>
+                    <button class="qty-btn" onclick="updateQty('Barritas-Nutritivas', 14, -1)">-</button>
                     <span class="qty-number" id="qty-Barritas-Nutritivas">0</span>
-                    <button class="qty-btn" onclick="updateQty('Barritas-Nutritivas', 12, 1)">+</button>
+                    <button class="qty-btn" onclick="updateQty('Barritas-Nutritivas', 14, 1)">+</button>
                 </div>
             </div>
         </div>
@@ -674,9 +732,9 @@
             <div class="prod-footer">
                 <span class="prod-price">$12</span>
                 <div class="qty-controls">
-                    <button class="qty-btn" onclick="updateQty('Galletas-de-Nuez', 16, -1)">-</button>
+                    <button class="qty-btn" onclick="updateQty('Galletas-de-Nuez', 12, -1)">-</button>
                     <span class="qty-number" id="qty-Galletas-de-Nuez">0</span>
-                    <button class="qty-btn" onclick="updateQty('Galletas-de-Nuez', 16, 1)">+</button>
+                    <button class="qty-btn" onclick="updateQty('Galletas-de-Nuez', 12, 1)">+</button>
                 </div>
             </div>
         </div>
@@ -693,12 +751,32 @@
             <div class="prod-footer">
                 <span class="prod-price">$12</span>
                 <div class="qty-controls">
-                    <button class="qty-btn" onclick="updateQty('Galletas-de-Canela', 16, -1)">-</button>
+                    <button class="qty-btn" onclick="updateQty('Galletas-de-Canela', 12, -1)">-</button>
                     <span class="qty-number" id="qty-Galletas-de-Canela">0</span>
-                    <button class="qty-btn" onclick="updateQty('Galletas-de-Canela', 16, 1)">+</button>
+                    <button class="qty-btn" onclick="updateQty('Galletas-de-Canela', 12, 1)">+</button>
                 </div>
             </div>
         </div>
+
+        <!-- TARJETA: GALLETAS DE COCO -->
+            <div class="card-product">
+                <div style="position: relative; text-align: center; margin-bottom: 12px; background-color: var(--nyc-light); padding: 10px; border-bottom: 1px solid var(--border-color);">
+                    <span class="badge-nuevo">Nuevo</span>
+                    <img src="imagenes/galleta-coco.png" alt="Galletas de Coco" style="max-width: 100%; height: 140px; object-fit: contain;">
+                </div>
+                <div>
+                    <div class="prod-name">Galletas de Coco</div>
+                    <div class="prod-desc">Galletas crujientes y doraditas con el toque dulce y aromático del coco rallado.</div>
+                </div>
+                <div class="prod-footer">
+                    <span class="prod-price">$12</span>
+                    <div class="qty-controls">
+                        <button class="qty-btn" onclick="updateQty('Galletas-de-Coco', 12, -1)">-</button>
+                        <span class="qty-number" id="qty-Galletas-de-Coco">0</span>
+                        <button class="qty-btn" onclick="updateQty('Galletas-de-Coco', 12, 1)">+</button>
+                    </div>
+                </div>
+            </div>
 
     </div>
 </section>
@@ -720,9 +798,29 @@
                     <div class="prod-footer">
                         <span class="prod-price">$22</span>
                         <div class="qty-controls">
-                            <button class="qty-btn" onclick="updateQty('Sopa-Maruchan', 20, -1)">-</button>
+                            <button class="qty-btn" onclick="updateQty('Sopa-Maruchan', 22, -1)">-</button>
                             <span class="qty-number" id="qty-Sopa-Maruchan">0</span>
-                            <button class="qty-btn" onclick="updateQty('Sopa-Maruchan', 20, 1)">+</button>
+                            <button class="qty-btn" onclick="updateQty('Sopa-Maruchan', 22, 1)">+</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TARJETA: MARUCHAN LOCAS -->
+                <div class="card-product">
+                    <div style="position: relative; text-align: center; margin-bottom: 12px; background-color: var(--nyc-light); padding: 10px; border-bottom: 1px solid var(--border-color);">
+                        <span class="badge-nuevo">Nuevo</span>
+                        <img src="imagenes/maruchan-locas.png" alt="Maruchan Locas" style="max-width: 100%; height: 140px; object-fit: contain;">
+                    </div>
+                    <div>
+                        <div class="prod-name">Maruchan Locas</div>
+                        <div class="prod-desc">Sopa preparada con Chetos FlamingHot, Nachos, limón, Elote, Queso Blanco, Chile en Polvo, Crema o Mayonesa y salsas al gusto.</div>
+                    </div>
+                    <div class="prod-footer">
+                        <span class="prod-price">$60</span>
+                        <div class="qty-controls">
+                            <button class="qty-btn" onclick="updateQty('Maruchan-Locas', 60, -1)">-</button>
+                            <span class="qty-number" id="qty-Maruchan-Locas">0</span>
+                            <button class="qty-btn" onclick="updateQty('Maruchan-Locas', 60, 1)">+</button>
                         </div>
                     </div>
                 </div>
